@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Each-Touch Asset Lab — CC0 Procedural Game Asset Packs (Zero AI)</title>
+  <meta name="description" content="Commercial-safe CC0 game audio, UI kits, VFX &amp; tiles synthesized deterministically with zero generative AI. Audition samples online and grab free demos." />
+  <link rel="canonical" href="https://each-touch.github.io/asset-lab/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2338bdf8'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-weight='800' font-size='14' fill='%230b0f14'%3EAL%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "150 CC0 Crisp UI & Arcade SFX Mega-Pack (WAV + OGG)", "description": "150 studio-mastered, zero-AI procedural game & UI sound effects across 10 folders — 44.1kHz WAV + OGG + Free 20-SFX Demo.", "brand": {"@type": "Brand", "name": "Each-Touch Asset Lab"}, "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "2.99", "availability": "https://schema.org/InStock", "url": "https://each-touch.itch.io/"}}</script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f14; --surface: #131922; --panel: #19212c; --border: rgba(148,163,184,0.18);
+      --text: #f1f5f9; --sec: #b6c4d6; --muted: #8b9bb4; --amber: #f59e0b; --cyan: #38bdf8; --green: #10b981;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.5; overflow-x: hidden; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: var(--mono); }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 18px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; font-size: 15px; }
+    .mark { width: 28px; height: 28px; border-radius: 7px; background: linear-gradient(135deg, #38bdf8, #0284c7); color: #0b0f14; display: inline-flex; align-items: center; justify-content: center; font-family: var(--mono); font-weight: 800; font-size: 13px; }
+    .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge { padding: 3px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; border: 1px solid var(--border); background: var(--panel); color: var(--sec); white-space: nowrap; }
+    .badge-amber { background: rgba(245,158,11,0.14); border-color: rgba(245,158,11,0.38); color: var(--amber); }
+    .badge-cyan { background: rgba(56,189,248,0.14); border-color: rgba(56,189,248,0.38); color: var(--cyan); }
+    .badge-green { background: rgba(16,185,129,0.14); border-color: rgba(16,185,129,0.38); color: var(--green); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 18px 18px 28px; }
+    .hero { background: radial-gradient(circle at 86% 18%, rgba(56,189,248,0.15), transparent 45%), var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; align-items: center; }
+    .hero h1 { margin: 8px 0 8px; font-size: clamp(22px, 3vw, 32px); line-height: 1.15; }
+    .hero p { margin: 0 0 14px; color: var(--sec); font-size: 14.5px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 9px 15px; border-radius: 7px; font-weight: 700; font-size: 13px; border: 1px solid rgba(148,163,184,0.3); background: var(--panel); color: var(--text); }
+    .btn:hover { text-decoration: none; border-color: var(--cyan); }
+    .btn-primary { background: var(--amber); border-color: var(--amber); color: #0b0f14; }
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 11px 13px; }
+    .stat strong { display: block; color: var(--amber); font-size: 15px; }
+    .stat span { font-size: 12px; color: var(--sec); }
+    .section-title { margin: 22px 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
+    .pack-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+    .pack-top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    .pack-card h2 { margin: 2px 0 0; font-size: 19px; }
+    .pack-desc { margin: 0; color: var(--sec); }
+    .pack-list { margin: 0; padding-left: 18px; color: var(--sec); font-size: 13px; }
+    .audition-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .sample-row { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .sample-meta { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .sample-meta .idx { color: var(--amber); font-weight: 800; font-size: 13px; }
+    .sample-meta strong { display: block; font-size: 13px; }
+    .sample-meta span { display: block; font-size: 11.5px; color: var(--muted); }
+    .sample-row audio { height: 32px; max-width: 220px; width: 100%; }
+    .ecosystem { margin-top: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 12.5px; color: var(--sec); }
+    .eco-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; padding: 16px; }
+      .hero .btn { width: 100%; }
+      .audition-grid { grid-template-columns: 1fr; }
+      .sample-row audio { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">AL</span><span>Each-Touch Asset Lab</span></a>
+    <div class="badges">
+      <span class="badge badge-green">100% CC0 Commercial-Safe</span>
+      <span class="badge badge-cyan">Zero Generative AI</span>
+      <span class="badge badge-amber">Free Demos + Full Packs</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <span class="badge badge-cyan">Commercial Game Assets · Pure DSP &amp; Procedural Art</span>
+        <h1>Royalty-Free CC0 Sound, UI &amp; Sprite Packs for Indie Devs</h1>
+        <p>Every pack is crafted deterministically via code—zero AI slop, zero copyright grey zones, instant WAV + OGG / PNG downloads with free trial demos.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://each-touch.itch.io/" target="_blank" rel="noopener noreferrer">Buy Flagship 150-SFX Pack ($2.99)</a>
+          <a class="btn" href="#audition">Audition 10 Live Samples</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>150 SFX</strong><span>10 categories × 15 studio sounds</span></div>
+        <div class="stat"><strong>300 Files</strong><span>44.1kHz 16-bit WAV + OGG</span></div>
+        <div class="stat"><strong>Zero AI</strong><span>100% Python DSP synthesis</span></div>
+        <div class="stat"><strong>Free Demo</strong><span>20 sounds free before buying</span></div>
+      </div>
+    </section>
+
+    <div class="section-title">Featured Commercial Pack</div>
+    <section>
+            <article class="pack-card">
+              <div class="pack-top">
+                <span class="badge badge-cyan">Audio &amp; SFX</span>
+                <span class="badge badge-amber">$2.99 USD · Free Demo</span>
+              </div>
+              <h2>150 CC0 Crisp UI &amp; Arcade SFX Mega-Pack (WAV + OGG)</h2>
+              <p class="pack-desc">150 studio-mastered, zero-AI procedural game &amp; UI sound effects across 10 folders — 44.1kHz WAV + OGG + Free 20-SFX Demo.</p>
+              <ul class="pack-list"><li>150 unique sounds in 10 ready-to-drop categories (UI, Coins, Lasers, Hits, Booms, Powerups, Swooshes)</li><li>Dual format: Uncompressed 16-bit 44.1kHz WAV + Ready-to-stream OGG Vorbis (300 files total)</li><li>100% deterministic Python DSP — zero generative AI, safe for Steam, itch.io &amp; commercial games (CC0)</li></ul>
+              <div class="pack-cta">
+                <a class="btn btn-primary" href="https://each-touch.itch.io/" target="_blank" rel="noopener noreferrer">Get Full Pack ($2.99) / Free Demo on itch.io</a>
+              </div>
+            </article>
+            </section>
+
+    <div class="section-title" id="audition">Live Browser Audition (10 Categories · Zero-AI Audio Previews)</div>
+    <section class="audition-grid">
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">01</span>
+                <div>
+                  <strong>UI Clicks &amp; Ticks</strong>
+                  <span>15 files (WAV + OGG) · Sample: Mechanical Crisp</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/01_UI_Clicks_01_mechanical_crisp.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">02</span>
+                <div>
+                  <strong>UI Confirm &amp; Success</strong>
+                  <span>15 files (WAV + OGG) · Sample: Chime Bright</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/02_UI_Confirm_Success_01_chime_bright.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">03</span>
+                <div>
+                  <strong>UI Alerts &amp; Errors</strong>
+                  <span>15 files (WAV + OGG) · Sample: Soft Deny</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/03_UI_Alerts_Errors_01_soft_deny.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">04</span>
+                <div>
+                  <strong>Coins, Pickups &amp; Gems</strong>
+                  <span>15 files (WAV + OGG) · Sample: Classic Coin</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/04_Coins_Pickups_Gems_01_classic_coin.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">05</span>
+                <div>
+                  <strong>Jumps, Hops &amp; Movement</strong>
+                  <span>15 files (WAV + OGG) · Sample: Spring Jump</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/05_Jumps_Hops_Movement_01_spring_jump.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">06</span>
+                <div>
+                  <strong>Lasers, Blasters &amp; Sci-Fi</strong>
+                  <span>15 files (WAV + OGG) · Sample: Pew Classic</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/06_Lasers_Blasters_SciFi_01_pew_classic.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">07</span>
+                <div>
+                  <strong>Impacts, Hits &amp; Punches</strong>
+                  <span>15 files (WAV + OGG) · Sample: Heavy Punch</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/07_Impacts_Hits_Punches_01_heavy_punch.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">08</span>
+                <div>
+                  <strong>Explosions &amp; Booms</strong>
+                  <span>15 files (WAV + OGG) · Sample: Sub Boom</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/08_Explosions_Booms_01_sub_boom.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">09</span>
+                <div>
+                  <strong>Powerups &amp; Level Up</strong>
+                  <span>15 files (WAV + OGG) · Sample: Fanfare Rise</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/09_Powerups_LevelUp_01_fanfare_rise.mp3"></audio>
+            </div>
+            
+            <div class="sample-row">
+              <div class="sample-meta">
+                <span class="mono idx">10</span>
+                <div>
+                  <strong>Menus, Swooshes &amp; Transitions</strong>
+                  <span>15 files (WAV + OGG) · Sample: Silk Whoosh</span>
+                </div>
+              </div>
+              <audio controls preload="none" src="./packs/ui-arcade-sfx-150/samples/10_Menus_Swoosh_Transitions_01_silk_whoosh.mp3"></audio>
+            </div>
+            </section>
+
+    <footer class="ecosystem">
+      <span>Each-Touch Creative Ecosystem · Commercial-Safe Tools &amp; Assets</span>
+      <div class="eco-links">
+        <a href="https://each-touch.github.io/forge-tools/" target="_blank" rel="noopener noreferrer">Forge Tools (Free Web Synths)</a>
+        <a href="https://each-touch.github.io/print-play-lab/" target="_blank" rel="noopener noreferrer">Print-Play Lab</a>
+        <a href="https://each-touch.github.io/dev-kits/" target="_blank" rel="noopener noreferrer">Dev Kits</a>
+        <a href="https://each-touch.github.io/" target="_blank" rel="noopener noreferrer">Each-Touch Arcade</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

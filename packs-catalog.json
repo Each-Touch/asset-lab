@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "ui-arcade-sfx-150",
+    "name": "150 CC0 UI & Arcade SFX Mega-Pack",
+    "shortTitle": "150 CC0 Crisp UI & Arcade SFX Mega-Pack (WAV + OGG)",
+    "tagline": "150 studio-mastered, zero-AI procedural game & UI sound effects across 10 folders — 44.1kHz WAV + OGG + Free 20-SFX Demo.",
+    "category": "Audio & SFX",
+    "priceUsd": 2.99,
+    "fullCount": 150,
+    "demoCount": 20,
+    "itchUrl": "",
+    "demoFile": "each-touch-20-ui-game-sfx-free-demo-cc0.zip",
+    "status": "live",
+    "launchedAt": "2026-11-22",
+    "highlights": [
+      "150 unique sounds in 10 ready-to-drop categories (UI, Coins, Lasers, Hits, Booms, Powerups, Swooshes)",
+      "Dual format: Uncompressed 16-bit 44.1kHz WAV + Ready-to-stream OGG Vorbis (300 files total)",
+      "100% deterministic Python DSP — zero generative AI, safe for Steam, itch.io & commercial games (CC0)"
+    ]
+  }
+]

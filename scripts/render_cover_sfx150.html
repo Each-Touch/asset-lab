@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; width: 630px; height: 500px; overflow: hidden;
+      background: #0b0f14; color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .cover {
+      width: 630px; height: 500px; padding: 32px 34px;
+      background:
+        radial-gradient(circle at 86% 18%, rgba(56, 189, 248, 0.24), transparent 44%),
+        radial-gradient(circle at 14% 85%, rgba(245, 158, 11, 0.24), transparent 46%),
+        linear-gradient(155deg, #101722 0%, #090c11 100%);
+      display: flex; flex-direction: column; justify-content: space-between;
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+    .badges { display: flex; gap: 10px; align-items: center; }
+    .pill {
+      padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 800;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .pill-green { background: rgba(16, 185, 129, 0.16); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; }
+    .pill-cyan { background: rgba(56, 189, 248, 0.16); border: 1px solid rgba(56, 189, 248, 0.45); color: #7dd3fc; }
+    .hero h1 { margin: 0 0 8px; font-size: 52px; line-height: 1.02; font-weight: 900; letter-spacing: -0.03em; }
+    .hero h1 span { color: #f59e0b; }
+    .hero p { margin: 0; font-size: 19px; color: #cbd5e1; font-weight: 600; }
+    .specs-card {
+      background: #05080c; border: 1.5px solid rgba(148, 163, 184, 0.32);
+      border-radius: 14px; padding: 14px 18px;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.48);
+    }
+    .specs-top {
+      display: flex; justify-content: space-between; font-family: ui-monospace, Menlo, monospace;
+      font-size: 12px; color: #94a3b8; margin-bottom: 10px;
+    }
+    .specs-top strong { color: #38bdf8; }
+    .cats {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 16px;
+      font-size: 13px; color: #e2e8f0; font-weight: 600;
+    }
+    .cats span { color: #f59e0b; font-family: ui-monospace, Menlo, monospace; margin-right: 6px; }
+    .bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .price-pill {
+      background: #f59e0b; color: #0b0f14; font-weight: 900; font-size: 15px;
+      padding: 10px 16px; border-radius: 9px;
+    }
+    .brand-meta { font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="badges">
+      <span class="pill pill-green">100% CC0 · ZERO AI</span>
+      <span class="pill pill-cyan">WAV + OGG · 300 FILES</span>
+    </div>
+    <div class="hero">
+      <h1><span>150</span> CC0 SFX</h1>
+      <p>UI &amp; Arcade Mega-Pack · Studio-Mastered</p>
+    </div>
+    <div class="specs-card">
+      <div class="specs-top">
+        <span><strong>10 FOLDERS</strong> × 15 SOUNDS EACH</span>
+        <span>44.1kHz 16-BIT + OGG</span>
+      </div>
+      <div class="cats">
+        <div><span>01</span>UI Clicks &amp; Ticks</div>
+        <div><span>06</span>Lasers &amp; Sci-Fi</div>
+        <div><span>02</span>Confirm &amp; Success</div>
+        <div><span>07</span>Impacts &amp; Hits</div>
+        <div><span>03</span>Alerts &amp; Errors</div>
+        <div><span>08</span>Explosions &amp; Booms</div>
+        <div><span>04</span>Coins &amp; Gems</div>
+        <div><span>09</span>Powerups &amp; Level Up</div>
+        <div><span>05</span>Jumps &amp; Movement</div>
+        <div><span>10</span>Menu Swooshes</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span class="price-pill">FREE 20-SFX DEMO · FULL PACK $2.99</span>
+      <span class="brand-meta">EACH-TOUCH ASSET LAB</span>
+    </div>
+  </div>
+</body>
+</html>
